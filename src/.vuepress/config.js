@@ -36,13 +36,9 @@ module.exports = {
     lastUpdated: 'Обновлено',
     editLinks: true,
     editLinkText: 'Вы можете помочь улучшить эту страницу!',
-    nav: [
-      {
-        text: 'Руководство',
-        link: '/guide/',
-      },
-    ],
-    sidebar: 'auto',
+    displayAllHeaders: true,
+    sidebar: ['/guide/', '/coding-guides/'],
+    sidebarDepth: 2,
   },
 
   markdown: {
