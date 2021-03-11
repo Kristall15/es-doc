@@ -223,3 +223,92 @@ un "Я{w} очень{w=1.0} рада!"
 ```
 
 Полный список текстовых тегов можно найти внутри [соответствующей статьи в документации Ren'Py](<http://ru.renpypedia.shoutwiki.com/wiki/%D0%A2%D0%B5%D0%BA%D1%81%D1%82_(Text)>)
+
+## Фоны
+
+Общий синтаксис для вывода фона: `scene <Название фона>`
+
+Например:
+
+```renpy
+scene bg bus_stop # Покажет нам автобусную остановку из времени Семена
+scene bg int_bus # Внутри автобуса, привезшего нас в "Совенок"
+scene bg ext_bus_night # Снаружи этого же автобуса, но уже ночью
+```
+
+Список всех фонов пока можно найти [здесь](https://drive.google.com/file/d/0B7BOgg028z7pWk9IbC1ZTlJDODQ/view).
+
+## Спрайты
+
+Вызывается спрайт с помощью: `show <Имя спрайта>`
+
+Обычно спрайты состоят из слов, разделённых пробелом: `<имя персонажа> <эмоция> <одежда>`
+
+::: tip
+В оригинальной игре имя персонажа совпадает с ID говорящего из предыдущего раздела этого руководства
+:::
+
+Например:
+
+```renpy
+show dv angry pioneer # Злая Алиса
+show un cry sport # Смущенная Лена в спортивной форме
+```
+
+Список всех спрайтов пока можно найти [здесь](https://drive.google.com/file/d/0B7BOgg028z7pbksxbFM3X1NOcXM/view).
+
+::: warning
+Если персонаж уже на экране, то повторное использование show будет менять эмоцию и/или одежду
+:::
+
+Для того, чтобы убрать персонажа воспользуйтесь: `hide <Имя персонажа>`
+
+::: tip
+Если вы хотите вслед за этим сменить декорации, то прописывать hide для каждого персонажа не обязательно, команда scene сама их уберет
+:::
+
+### Действия со спрайтами
+
+#### Позиционирование
+
+При простом использовании `show <Спрайт>` он будет появляться просто по центру, это можно исправить добавив в конец `at <Позиция>`: `show <Спрайт> at <Позиция>`.
+
+Всего в игре 7 позиций где может находиться спрайт:
+
+- `fleft`
+- `left`
+- `cleft`
+- `center`
+- `cright`
+- `right`
+- `fright`
+
+![Пример расположения спрайтов](/images/example_sprites_positioning.jpg)
+
+На скриншоте выше были использованы следующие команды:
+
+```renpy
+scene bg ext_bus_night
+
+show dv angry pioneer2 at left
+show un smile pioneer at right
+show mi cry_smile pioneer at cleft
+show sl serious pioneer at cright
+show mt rage panama pioneer at center
+```
+
+Так же можно показать персонажа ближе / дальше. Для этого можно воспользоваться атрибутом `close` / `far`.
+
+![Пример использования атрибутов close / far](/images/example_sprites_distances.jpg)
+
+На скриншоте выше как раз были использованны эти атрибуты. Команды:
+
+```renpy
+scene bg ext_bus_night
+
+show dv angry pioneer2 far at left
+show un smile pioneer far at right
+show mi cry_smile pioneer at cleft
+show sl serious pioneer at cright
+show mt rage panama pioneer close at center
+```
