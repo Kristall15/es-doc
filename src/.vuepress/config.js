@@ -32,7 +32,6 @@ module.exports = {
   themeConfig: {
     repo: 'yegorgunko/es-doc',
     docsBranch: 'dev',
-    lastUpdated: 'Обновлено',
     editLinks: true,
     editLinkText: 'Вы можете помочь улучшить эту страницу!',
     nav: [{ text: 'Руководство', link: '/guide/' }],
