@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://steamuserimages-a.akamaihd.net/ugc/1025073109314274519/51DE29DEC4E9FBC9FB38F3AC43743EB51DAF628E/
+heroImage: /logo.png
 actionText: Начать →
 actionLink: /guide/
 features:

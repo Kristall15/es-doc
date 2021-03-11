@@ -40,6 +40,7 @@ module.exports = {
     displayAllHeaders: true,
     sidebar: ['/guide/', '/coding-guides/'],
     sidebarDepth: 2,
+    logo: '/logo.png',
   },
 
   markdown: {
