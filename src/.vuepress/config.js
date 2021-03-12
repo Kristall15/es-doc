@@ -44,7 +44,12 @@ module.exports = {
         link: '/tables.md',
       },
     ],
-    sidebar: ['/guide/', '/guide/videos.md', '/guide/code-examples.md'],
+    sidebar: [
+      '/guide/',
+      '/guide/videos.md',
+      '/guide/advanced.md',
+      '/guide/code-examples.md',
+    ],
     sidebarDepth: 2,
     logo: '/logo.png',
   },
