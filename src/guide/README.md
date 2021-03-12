@@ -238,7 +238,7 @@ scene bg int_bus # Внутри автобуса, привезшего нас в
 scene bg ext_bus_night # Снаружи этого же автобуса, но уже ночью
 ```
 
-Список всех фонов пока можно найти [здесь](https://drive.google.com/file/d/0B7BOgg028z7pWk9IbC1ZTlJDODQ/view).
+<BgsTable />
 
 ## Спрайты
 
