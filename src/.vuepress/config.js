@@ -38,7 +38,7 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Вы можете помочь улучшить эту страницу!',
     displayAllHeaders: true,
-    sidebar: ['/guide/', '/coding-guides/'],
+    sidebar: ['/guide/', '/guide/videos', '/guide/code-examples'],
     sidebarDepth: 2,
     logo: '/logo.png',
   },
