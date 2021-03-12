@@ -38,7 +38,13 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Вы можете помочь улучшить эту страницу!',
     displayAllHeaders: true,
-    sidebar: ['/guide/', '/guide/videos', '/guide/code-examples'],
+    nav: [
+      {
+        text: 'Таблицы ресурсов',
+        link: '/tables.md',
+      },
+    ],
+    sidebar: ['/guide/', '/guide/videos.md', '/guide/code-examples.md'],
     sidebarDepth: 2,
     logo: '/logo.png',
   },
