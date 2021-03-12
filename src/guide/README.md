@@ -2,6 +2,14 @@
 
 [[toc]]
 
+## Благодарности
+
+- Создателям отличного [гайда в Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=690911411), на котором основано данное руководство:
+  - [HenсoDesu](https://steamcommunity.com/id/hencodesu) - за создание гайда в Steam
+  - [Владе](http://steamcommunity.com/id/cool_vlad) - отдельно за создание интересных модов и за помощь в дополнениии руководства в Steam
+  - [Лене](http://steamcommunity.com/id/lena_sova) - отдельно за помощь в коментариях всем, кто столкнулся с затруднениями в Steam и создание полезных модификаций
+- [Nikolas Khikkanov](https://vk.com/itsmlg) - за помощь в создании данного руководства
+
 ## Предпосылки
 
 - Установленная игра "Бесконечное Лето".
