@@ -19,5 +19,6 @@
   "vetur.format.defaultFormatter.js": "prettier-eslint",
   "prettier.packageManager": "yarn",
   "prettier.requireConfig": true,
-  "eslint.lintTask.enable": true
+  "eslint.lintTask.enable": true,
+  "eslint.packageManager": "yarn"
 }
