@@ -45,7 +45,7 @@ module.exports = {
       },
       {
         text: 'Таблицы ресурсов',
-        link: '/tables/',
+        link: '/resources-tables.md',
       },
     ],
     sidebar: [

@@ -16,6 +16,10 @@ sidebar: auto
 
 <BgsTable />
 
+### CG
+
+<CgsTable />
+
 ## Звуки
 
 ### Музыка
