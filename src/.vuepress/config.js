@@ -52,6 +52,7 @@ module.exports = {
       '/guide/',
       '/guide/videos.md',
       '/guide/advanced.md',
+      '/guide/errors.md',
       '/guide/code-examples.md',
     ],
     sidebarDepth: 2,
