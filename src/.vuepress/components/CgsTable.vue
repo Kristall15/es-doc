@@ -73,6 +73,7 @@ export default {
         },
         {
           name: 'd2_sl_swim',
+          mature: true,
         },
         {
           name: 'd2_slavya_forest',
@@ -100,6 +101,7 @@ export default {
         },
         {
           name: 'd3_sl_bathhouse',
+          mature: true,
         },
         {
           name: 'd3_sl_dance',
@@ -220,6 +222,7 @@ export default {
         },
         {
           name: 'd5_dv_us_wash_3',
+          mature: true,
         },
         {
           name: 'd5_dv_us_wash_4',
@@ -299,6 +302,7 @@ export default {
         },
         {
           name: 'd6_sl_swim',
+          mature: true,
         },
         {
           name: 'd6_un_evening_1',
@@ -335,9 +339,11 @@ export default {
         },
         {
           name: 'd7_sl_morning',
+          mature: true,
         },
         {
           name: 'd7_sl_morning_2',
+          mature: true,
         },
         {
           name: 'd7_un_hentai',
@@ -367,24 +373,31 @@ export default {
         },
         {
           name: 'epilogue_mi_2',
+          mature: true,
         },
         {
           name: 'epilogue_mi_3',
+          mature: true,
         },
         {
           name: 'epilogue_mi_4',
+          mature: true,
         },
         {
           name: 'epilogue_mi_5',
+          mature: true,
         },
         {
           name: 'epilogue_mi_6',
+          mature: true,
         },
         {
           name: 'epilogue_mi_7',
+          mature: true,
         },
         {
           name: 'epilogue_mi_8',
+          mature: true,
         },
         {
           name: 'epilogue_mi_9',
@@ -400,6 +413,7 @@ export default {
         },
         {
           name: 'epilogue_un_bad',
+          mature: true,
         },
         {
           name: 'epilogue_un_good',
@@ -439,9 +453,6 @@ export default {
         },
         {
           name: 'final_all_2',
-        },
-        {
-          name: 'list.json',
         },
         {
           name: 'miku_h_1_cenz',
