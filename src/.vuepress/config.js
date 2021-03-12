@@ -40,8 +40,12 @@ module.exports = {
     displayAllHeaders: true,
     nav: [
       {
+        text: 'Руководство',
+        link: '/guide/',
+      },
+      {
         text: 'Таблицы ресурсов',
-        link: '/tables.md',
+        link: '/tables/',
       },
     ],
     sidebar: [
