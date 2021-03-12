@@ -259,11 +259,11 @@ label my_mod:
 `ambience`, `music`, `sound`, `sound2`, `sound3`, `sound_loop`, `sound_loop2`, `sound_loop3`.
 
 Если вам необходимо добавить новый аудио канал, то в init-блоке вашего мода пропишите следующее:
-`renpy.music.register_channel("название_канала", "название_микшера", True)`
+`renpy.music.register_channel("<название_канала>", "<название_микшера>", True)`
 
 Пример:
 
-```renpy{2}
+```renpy
 init:
     $ renpy.music.register_channel("voices", "voice", True)
 ```
@@ -271,12 +271,13 @@ init:
 Есть три возможных микcера громкости, - `music`, `sfx` и `voice`. Подбирайте необходимый вам микcер в соответствии с предназначением дорожки.
 
 Если же вам необходимо создать свой микшер для звука или музыки, пропишите следующее:
-`renpy.sound.set_mixer("название_канала", "номер_микшера")`
+`renpy.sound.set_mixer("название_канала", "номер_микшера")`.
+
 Это задает имя микшера, связанного с данным каналом. "sfx" находится на каналах от 0 до 3, а "music" - от 3 до 7.
 
 Пример:
 
-```renpy{2}
+```renpy
 init:
     $ renpy.sound.set_mixer(voices_mixer, 10)
 ```
