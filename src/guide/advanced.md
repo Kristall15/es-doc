@@ -118,7 +118,7 @@ label my_mod:
 1. Перед выводом карты нужно сбросить все прошлые зоны на ней:
 
 ```renpy
-disable_all_zones() # Отключает все старые маркеры карты.
+$ disable_all_zones() # Отключает все старые маркеры карты.
 ```
 
 2. Заполняем конструкцию `set_zone()`.
@@ -144,14 +144,14 @@ disable_all_zones() # Отключает все старые маркеры ка
 Например, чтобы при нажатии на клубы мы прыгали на лейбл `day1_gone_to_clubs` (название, лишь для примера) нужно реализовать такую конструкцию:
 
 ```renpy
-set_zone("clubs", "day1_gone_to_clubs")
+$ set_zone("clubs", "day1_gone_to_clubs")
 ```
 
 И в конце, выводим саму карту командой:
 
 ```renpy{2}
-set_zone("clubs", "day1_gone_to_clubs")
-show_map()
+$ set_zone("clubs", "day1_gone_to_clubs")
+$ show_map()
 ```
 
 Полный пример:
