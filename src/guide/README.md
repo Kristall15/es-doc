@@ -456,7 +456,7 @@ init:
     $ city_ambience = "mods/sounds/city_ambience.mp3"
 
 label mod_start:
-    play ambience city_ambience #Проигрываем эмбиенс города на канале `ambience`
+    play ambience city_ambience # Проигрываем эмбиенс города на канале `ambience`
 ```
 
 :::tip Аудио-каналы
