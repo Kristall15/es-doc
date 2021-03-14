@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import ListDownloadLink from './ListDownloadLink.vue'
+import ListDownloadLink from '../ListDownloadLink.vue'
 
 export default {
   components: {

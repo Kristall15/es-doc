@@ -8,28 +8,28 @@ sidebar: auto
 
 ## Персонажи
 
-<CharactersTable />
+<Tables-Characters />
 
 ## Изображения
 
 ### Фоны
 
-<BgsTable />
+<Tables-Bgs />
 
 ### CG
 
-<CgsTable />
+<Tables-Cgs />
 
 ## Звуки
 
 ### Музыка
 
-<MusicTable />
+<Tables-Music />
 
 ### Окружение
 
-<AmbiencesTable />
+<Tables-Ambiences />
 
 ### Прочие звуки
 
-<SfxTable />
+<Tables-Sfx />
