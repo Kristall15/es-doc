@@ -1,28 +1,36 @@
 <template>
-  <table>
-    <tr>
-      <th>Код</th>
-      <th>Предпросмотр</th>
-    </tr>
-    <tr v-for="(name, index) in sounds" :key="index">
-      <td>
-        <code>play sound sfx_{{ name }}</code>
-      </td>
-      <td>
-        <audio
-          :src="`/resources/default/sounds/sfx/${name}.ogg`"
-          controls
-        ></audio>
-      </td>
-    </tr>
-  </table>
+  <div>
+    <ListDownloadLink :data="sfx" file="sfx_list.txt" />
+    <table>
+      <tr>
+        <th>Код</th>
+        <th>Предпросмотр</th>
+      </tr>
+      <tr v-for="(name, index) in sfx" :key="index">
+        <td>
+          <code>play sound sfx_{{ name }}</code>
+        </td>
+        <td>
+          <audio
+            :src="`/resources/default/sounds/sfx/${name}.ogg`"
+            controls
+          ></audio>
+        </td>
+      </tr>
+    </table>
+  </div>
 </template>
 
 <script>
+import ListDownloadLink from './ListDownloadLink.vue'
+
 export default {
+  components: {
+    ListDownloadLink,
+  },
   data() {
     return {
-      sounds: [
+      sfx: [
         'achievement',
         'alisa_falls',
         'alisa_falls_novoice',

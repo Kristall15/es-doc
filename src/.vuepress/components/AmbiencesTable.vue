@@ -1,25 +1,33 @@
 <template>
-  <table>
-    <tr>
-      <th>Код</th>
-      <th>Предпросмотр</th>
-    </tr>
-    <tr v-for="(name, index) in ambiences" :key="index">
-      <td>
-        <code>play ambience {{ name }}</code>
-      </td>
-      <td>
-        <audio
-          :src="`/resources/default/sounds/ambiences/${name}.ogg`"
-          controls
-        ></audio>
-      </td>
-    </tr>
-  </table>
+  <div>
+    <ListDownloadLink :data="ambiences" file="ambiences_list.txt" />
+    <table>
+      <tr>
+        <th>Код</th>
+        <th>Предпросмотр</th>
+      </tr>
+      <tr v-for="(name, index) in ambiences" :key="index">
+        <td>
+          <code>play ambience {{ name }}</code>
+        </td>
+        <td>
+          <audio
+            :src="`/resources/default/sounds/ambiences/${name}.ogg`"
+            controls
+          ></audio>
+        </td>
+      </tr>
+    </table>
+  </div>
 </template>
 
 <script>
+import ListDownloadLink from './ListDownloadLink.vue'
+
 export default {
+  components: {
+    ListDownloadLink,
+  },
   data() {
     return {
       ambiences: [
@@ -62,6 +70,11 @@ export default {
         'soccer_play_background',
       ],
     }
+  },
+  computed: {
+    textList() {
+      return `data:text/plain;charset=utf-8,${this.ambiences.join('\n')}`
+    },
   },
 }
 </script>

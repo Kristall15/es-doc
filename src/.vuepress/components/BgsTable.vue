@@ -1,22 +1,30 @@
 <template>
-  <table>
-    <tr>
-      <th>Код</th>
-      <th>Предпросмотр</th>
-    </tr>
-    <tr v-for="(name, index) in bgs" :key="index">
-      <td>
-        <code>scene bg {{ name }}</code>
-      </td>
-      <td>
-        <img :src="`/resources/default/images/bgs/${name}.jpg`" />
-      </td>
-    </tr>
-  </table>
+  <div>
+    <ListDownloadLink :data="bgs" file="bgs_list.txt" />
+    <table>
+      <tr>
+        <th>Код</th>
+        <th>Предпросмотр</th>
+      </tr>
+      <tr v-for="(name, index) in bgs" :key="index">
+        <td>
+          <code>scene bg {{ name }}</code>
+        </td>
+        <td>
+          <img :src="`/resources/default/images/bgs/${name}.jpg`" />
+        </td>
+      </tr>
+    </table>
+  </div>
 </template>
 
 <script>
+import ListDownloadLink from './ListDownloadLink.vue'
+
 export default {
+  components: {
+    ListDownloadLink,
+  },
   data() {
     return {
       bgs: [

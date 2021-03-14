@@ -1,25 +1,36 @@
 <template>
-  <table>
-    <tr>
-      <th>Код</th>
-      <th>Предпросмотр</th>
-    </tr>
-    <tr v-for="(name, index) in music" :key="index">
-      <td>
-        <code>play music music_list["{{ name }}"]</code>
-      </td>
-      <td>
-        <audio
-          :src="`/resources/default/sounds/music/${name}.ogg`"
-          controls
-        ></audio>
-      </td>
-    </tr>
-  </table>
+  <div>
+    <ListDownloadLink
+      :data="music.map((item) => `music_list[&quot;${item}&quot;]`)"
+      file="music_list.txt"
+    />
+    <table>
+      <tr>
+        <th>Код</th>
+        <th>Предпросмотр</th>
+      </tr>
+      <tr v-for="(name, index) in music" :key="index">
+        <td>
+          <code>play music music_list["{{ name }}"]</code>
+        </td>
+        <td>
+          <audio
+            :src="`/resources/default/sounds/music/${name}.ogg`"
+            controls
+          ></audio>
+        </td>
+      </tr>
+    </table>
+  </div>
 </template>
 
 <script>
+import ListDownloadLink from './ListDownloadLink.vue'
+
 export default {
+  components: {
+    ListDownloadLink,
+  },
   data() {
     return {
       music: [

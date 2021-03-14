@@ -1,25 +1,33 @@
 <template>
-  <table>
-    <tr>
-      <th>Код</th>
-      <th>Предпросмотр</th>
-    </tr>
-    <tr v-for="({ name, mature }, index) in cgs" :key="index">
-      <td>
-        <code>scene cg {{ name }}</code>
-      </td>
-      <td>
-        <img
-          :src="`/resources/default/images/cgs/${name}.jpg`"
-          :class="{ 'mature-img': mature }"
-        />
-      </td>
-    </tr>
-  </table>
+  <div>
+    <ListDownloadLink :data="cgs" file="cgs_list.txt" />
+    <table>
+      <tr>
+        <th>Код</th>
+        <th>Предпросмотр</th>
+      </tr>
+      <tr v-for="({ name, mature }, index) in cgs" :key="index">
+        <td>
+          <code>scene cg {{ name }}</code>
+        </td>
+        <td>
+          <img
+            :src="`/resources/default/images/cgs/${name}.jpg`"
+            :class="{ 'mature-img': mature }"
+          />
+        </td>
+      </tr>
+    </table>
+  </div>
 </template>
 
 <script>
+import ListDownloadLink from './ListDownloadLink.vue'
+
 export default {
+  components: {
+    ListDownloadLink,
+  },
   data() {
     return {
       cgs: [
