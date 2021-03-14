@@ -45,16 +45,14 @@ module.exports = {
       },
       {
         text: 'Таблицы ресурсов',
-        link: '/resources-tables.md',
+        link: '/resources/',
       },
     ],
-    sidebar: [
-      '/guide/',
-      '/guide/videos.md',
-      '/guide/advanced.md',
-      '/guide/errors.md',
-      '/guide/code-examples.md',
-    ],
+    sidebar: {
+      '/guide/': ['', 'videos', 'advanced', 'errors', 'code-examples'],
+      '/resources/': ['', 'community'],
+      '/': [''],
+    },
     sidebarDepth: 2,
     logo: '/logo.png',
   },
