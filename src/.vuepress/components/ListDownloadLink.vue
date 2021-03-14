@@ -35,9 +35,9 @@ export default {
           return item
         })
         .join('\n')
-      this.textData = `data:text/plain;charset=utf-8,${encodeURIComponent(
-        text
-      )}`
+
+      this.textData =
+        'data:text/plain;charset=utf-8,' + encodeURIComponent(text)
     },
   },
 }
