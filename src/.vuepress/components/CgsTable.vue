@@ -10,7 +10,7 @@
       </td>
       <td>
         <img
-          :src="`/images/cgs/${name}.jpg`"
+          :src="`/resources/default/images/cgs/${name}.jpg`"
           :class="{ 'mature-img': mature }"
         />
       </td>

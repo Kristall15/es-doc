@@ -9,7 +9,10 @@
         <code>play sound sfx_{{ name }}</code>
       </td>
       <td>
-        <audio :src="`/sounds/${name}.ogg`" controls></audio>
+        <audio
+          :src="`/resources/default/sounds/sfx/${name}.ogg`"
+          controls
+        ></audio>
       </td>
     </tr>
   </table>

@@ -9,7 +9,7 @@
         <code>scene bg {{ name }}</code>
       </td>
       <td>
-        <img :src="`/images/bgs/${name}.jpg`" />
+        <img :src="`/resources/default/images/bgs/${name}.jpg`" />
       </td>
     </tr>
   </table>

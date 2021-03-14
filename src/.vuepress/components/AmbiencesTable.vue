@@ -9,7 +9,10 @@
         <code>play ambience {{ name }}</code>
       </td>
       <td>
-        <audio :src="`/ambiences/${name}.ogg`" controls></audio>
+        <audio
+          :src="`/resources/default/sounds/ambiences/${name}.ogg`"
+          controls
+        ></audio>
       </td>
     </tr>
   </table>

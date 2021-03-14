@@ -9,7 +9,10 @@
         <code>play music music_list["{{ name }}"]</code>
       </td>
       <td>
-        <audio :src="`/music/${name}.ogg`" controls></audio>
+        <audio
+          :src="`/resources/default/sounds/music/${name}.ogg`"
+          controls
+        ></audio>
       </td>
     </tr>
   </table>
