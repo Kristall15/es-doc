@@ -310,7 +310,7 @@ label my_mod:
 Например:
 
 ```renpy
-define maksimka = Character('Максим', kind=nvl, color="#c8ffc8")
+define maks = Character('Максим', kind=nvl, color="#c8ffc8")
 ````
 
 Если же этого не сделать, то внутри nvl-режима повествования персонажи без параметра `kind=nvl` будут говорить в adv-режиме.
