@@ -17,7 +17,7 @@
       <tr v-for="({ name, description }, index) in sfx" :key="index">
         <td>
           <code>play sound sfx_{{ name }}</code>
-          <div style="margin-top: 1rem">
+          <div v-if="description" style="margin-top: 1rem">
             <small>{{ description }}</small>
           </div>
         </td>
