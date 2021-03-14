@@ -13,6 +13,7 @@
         <td>
           <audio
             :src="`/resources/default/sounds/sfx/${name}.ogg`"
+            type="audio/ogg"
             controls
           ></audio>
         </td>

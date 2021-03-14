@@ -16,6 +16,7 @@
         <td>
           <audio
             :src="`/resources/default/sounds/music/${name}.ogg`"
+            type="audio/ogg"
             controls
           ></audio>
         </td>

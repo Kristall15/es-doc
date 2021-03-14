@@ -13,6 +13,7 @@
         <td>
           <audio
             :src="`/resources/default/sounds/ambiences/${name}.ogg`"
+            type="audio/ogg"
             controls
           ></audio>
         </td>
