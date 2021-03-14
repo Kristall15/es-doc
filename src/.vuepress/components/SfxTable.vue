@@ -1,14 +1,25 @@
 <template>
   <div>
-    <ListDownloadLink :data="sfx" file="sfx_list.txt" />
+    <ListDownloadLink
+      :data="
+        sfx.map((item) => ({
+          name: `sfx_${item.name}`,
+          description: item.description,
+        }))
+      "
+      file="sfx_list.txt"
+    />
     <table>
       <tr>
         <th>Код</th>
         <th>Предпросмотр</th>
       </tr>
-      <tr v-for="(name, index) in sfx" :key="index">
+      <tr v-for="({ name, description }, index) in sfx" :key="index">
         <td>
           <code>play sound sfx_{{ name }}</code>
+          <div style="margin-top: 1rem">
+            <small>{{ description }}</small>
+          </div>
         </td>
         <td>
           <audio
@@ -32,224 +43,878 @@ export default {
   data() {
     return {
       sfx: [
-        'achievement',
-        'alisa_falls',
-        'alisa_falls_novoice',
-        'alisa_lighter',
-        'alisa_masha_enter',
-        'alisa_picklock',
-        'angry_ulyana',
-        'armature_swish',
-        'bed_squeak1',
-        'bed_squeak2',
-        'blanket_off',
-        'blanket_off_stand',
-        'blow_out_candle',
-        'boat_impact',
-        'body_bump',
-        'bodyfall_1',
-        'bones_breaking',
-        'borshtch',
-        'brass_drop',
-        'break_cupboard',
-        'break_flashlight',
-        'break_flashlight_alisa',
-        'break_grid',
-        'break_monitor',
-        'broken_dish',
-        'broom_sweep',
-        'bus_honk',
-        'bus_idle',
-        'bus_interior_moving',
-        'bus_loop',
-        'bus_out',
-        'bus_stop',
-        'bus_window_hit',
-        'bush_body_fall',
-        'bush_leaves',
-        'campus_door_rattle',
-        'carousel_squeak',
-        'catgirl_hiss',
-        'cellar_open',
-        'cellular_phone_error',
-        'chair_fall',
-        'cigarette_pack_crumple',
-        'clench2',
-        'click_1',
-        'click_2',
-        'click_3',
-        'close_cabinet',
-        'close_door_1',
-        'close_door_campus_1',
-        'close_door_clubs_nextroom',
-        'close_water_sink',
-        'computer_noise',
-        'computer_screen_static',
-        'concert_applause',
-        'cooking_eggs_1',
-        'cooking_eggs_2',
-        'cooling_bus_motor',
-        'cooling_engine_loop',
-        'dinner_horn_processed',
-        'dinner_jingle_normal',
-        'dinner_jingle_speaker',
-        'dinner_jingle_speaker_tape',
-        'door_bell',
-        'door_squeak_light',
-        'draw_water',
-        'drawer_rattle',
-        'drop_alisa_bag',
-        'drop_pipe',
-        'dropped_chair',
-        'eat_apple',
-        'energy_door_bus',
-        'face_slap',
-        'fall_grass',
-        'fall_metal_door',
-        'fall_wood_floor',
-        'far_steps',
-        'forest_fireplace',
-        'ghost_children_laugh',
-        'grate_hand_fall',
-        'grate_open_hand',
-        'gusty_wind',
-        'hatch_drop',
-        'head_explode',
-        'head_heartbeat',
-        'hell_alarm_clock',
-        'hell_crickets_1',
-        'hell_crickets_2',
-        'hell_crickets_3',
-        'hell_crickets_4',
-        'hiding_in_bush',
-        'home_phone_break',
-        'home_phone_ring',
-        'home_phone_take',
-        'ignite_torch',
-        'ikarus_arrive',
-        'ikarus_open_doors',
-        'inhale',
-        'insert_crowbar_door',
-        'intro_bus_door_open',
-        'intro_bus_engine_loop',
-        'intro_bus_engine_start',
-        'intro_bus_stop_sigh',
-        'intro_bus_stop_steps',
-        'intro_bus_transition',
-        'jump_into_hole',
-        'jump_into_hole_2',
-        'jump_into_hole_3',
-        'jump_over_hole',
-        'key_drawer',
-        'keyboard_mouse',
-        'keyboard_mouse_computer_noise',
-        'keys_rattle',
-        'knock_door2',
-        'knock_door3_dull',
-        'knock_door6_closed',
-        'knock_door7_polite',
-        'knock_door_closed_hard1',
-        'knock_door_closed_hard2',
-        'knock_glass',
-        'knocking_door_2',
-        'knocking_door_outside',
-        'lena_hits_alisa',
-        'lena_plays_tennis_fail',
-        'light_candle',
-        'lock_click',
-        'lock_close',
-        'lock_open',
-        'lock_open_close_1',
-        'match_candle',
-        'medpunkt_door_open',
-        'menu_gate',
-        'metal_door_handle_rattle',
-        'metal_door_heavy_close',
-        'metal_door_large_close_basement',
-        'miku_song_learn1',
-        'miku_song_learn2',
-        'muffled_explosion',
-        'mystery_movement',
-        'nightmare_explosion',
-        'nightmare_underground_rumble',
-        'open_cabinet_1',
-        'open_cabinet_2',
-        'open_cupboard',
-        'open_dooor_campus_1',
-        'open_dooor_campus_2',
-        'open_door_1',
-        'open_door_2',
-        'open_door_clubs',
-        'open_door_clubs_2',
-        'open_door_clubs_nextroom',
-        'open_door_kick',
-        'open_door_mines',
-        'open_door_mines_metal',
-        'open_door_squeak_2',
-        'open_door_strong',
-        'open_drapes',
-        'open_journal',
-        'open_metal_door',
-        'open_metal_hatch',
-        'open_table',
-        'open_water_sink',
-        'open_window',
-        'owl_far',
-        'paper_bag',
-        'pat_shoulder_hard',
-        'piano_head_bump',
-        'punch_medium',
-        'punch_washstand',
-        'put_sugar_cart',
-        'radio_squelch_1',
-        'radio_squelch_2',
-        'radio_tune',
-        'rowboat_loop',
-        'run_forest',
-        'salt_impact',
-        'scary_sting',
-        'scoop_water_cup',
-        'shoulder_dive_water',
-        'shurik_mines_far',
-        'shurik_opens_door',
-        'shurik_snore',
-        'signal_pistol',
-        'simon_applause',
-        'simon_fall_1',
-        'simon_fall_2',
-        'slam_door_campus',
-        'slavya_gets_out',
-        'slavya_run',
-        'soccer_ball_catch',
-        'soccer_ball_gate',
-        'soccer_ball_kick',
-        'steps_clubs_nextroom',
-        'stomach_growl',
-        'street_traffic_outside',
-        'suspence_bang',
-        'swimming',
-        'table_hit',
-        'tennis_serve_1',
-        'tennis_serve_2',
-        'terminator',
-        'terminator_parody',
-        'throw_compote',
-        'thunder_crack',
-        'thunder_rumble',
-        'thunder_wood',
-        'torch',
-        'tree_branches',
-        'uliana_jumps_down',
-        'underwater_dive',
-        'unlock_door_campus',
-        'unlock_medpunkt_door',
-        'unzip_sleepbag',
-        'water_emerge',
-        'water_sink_stream',
-        'water_splash',
-        'wind_gust',
-        'wood_floor_squeak',
-        'wood_friction',
+        {
+          name: 'achievement',
+          description: 'Звук получения достижения',
+        },
+        {
+          name: 'alisa_falls',
+          description: 'Шум, Алиса падает с вскриком',
+        },
+        {
+          name: 'alisa_falls_novoice',
+          description: 'Алиса падает без вскрика',
+        },
+        {
+          name: 'alisa_lighter',
+          description: 'Алиса чиркает зажигалкой',
+        },
+        {
+          name: 'alisa_masha_enter',
+          description: 'Алиса и кто-то ещё, входят в комнату',
+        },
+        {
+          name: 'alisa_picklock',
+          description: 'Алиса ковыряет ключами',
+        },
+        {
+          name: 'angry_ulyana',
+          description: 'Злая Ульяна, звук как закипающий чайник',
+        },
+        {
+          name: 'armature_swish',
+          description: 'Взмах арматурой',
+        },
+        {
+          name: 'bed_squeak1',
+          description: 'Скрип кровати, 1',
+        },
+        {
+          name: 'bed_squeak2',
+          description: 'Скрип кровати, 2',
+        },
+        {
+          name: 'blanket_off',
+          description: 'Прыжок на кровать 1',
+        },
+        {
+          name: 'blanket_off_stand',
+          description: 'Падение на кровать 2, больше шума',
+        },
+        {
+          name: 'blow_out_candle',
+          description: 'Задувание свечи',
+        },
+        {
+          name: 'boat_impact',
+          description: 'Столкновение лодок',
+        },
+        {
+          name: 'body_bump',
+          description: 'Падение тела на пол',
+        },
+        {
+          name: 'bodyfall_1',
+          description: 'Глухое падение',
+        },
+        {
+          name: 'bones_breaking',
+          description: 'Звук ломающихся костей',
+        },
+        {
+          name: 'borshtch',
+          description: 'Обливание супом',
+        },
+        {
+          name: 'brass_drop',
+          description: 'Падает что-то железное',
+        },
+        {
+          name: 'break_cupboard',
+          description: 'Сломали что-то',
+        },
+        {
+          name: 'break_flashlight',
+          description: 'Разбили фонарь',
+        },
+        {
+          name: 'break_flashlight_alisa',
+          description: 'Разбили фонарь, Алиса вскрикнула',
+        },
+        {
+          name: 'break_grid',
+          description: 'Ломание решётки',
+        },
+        {
+          name: 'break_monitor',
+          description: 'Сломали монитор',
+        },
+        {
+          name: 'broken_dish',
+          description: 'Разбили стакан',
+        },
+        {
+          name: 'broom_sweep',
+          description: 'Подметают',
+        },
+        {
+          name: 'bus_honk',
+          description: 'Гудок машины',
+        },
+        {
+          name: 'bus_idle',
+          description: 'Работающий мотор',
+        },
+        {
+          name: 'bus_interior_moving',
+          description: 'Семён едет в автобусе',
+        },
+        {
+          name: 'bus_loop',
+          description: 'Звук мотора и скрип в салоне',
+        },
+        {
+          name: 'bus_out',
+          description: 'Автобус уехал',
+        },
+        {
+          name: 'bus_stop',
+          description: 'Автобус остановился',
+        },
+        {
+          name: 'bus_window_hit',
+          description: 'Удар по стеклу',
+        },
+        {
+          name: 'bush_body_fall',
+          description: 'Падение тела',
+        },
+        {
+          name: 'bush_leaves',
+          description: 'Шум сухих листьев',
+        },
+        {
+          name: 'campus_door_rattle',
+          description: 'Попытка открыть закрытую дверь',
+        },
+        {
+          name: 'carousel_squeak',
+          description: 'Скрип заржавевшей решётки или двери',
+        },
+        {
+          name: 'catgirl_hiss',
+          description: 'Шипение девочки кошки',
+        },
+        {
+          name: 'cellar_open',
+          description: 'Открытие шкафа',
+        },
+        {
+          name: 'cellular_phone_error',
+          description: 'Смартфон, нет сигнала',
+        },
+        {
+          name: 'chair_fall',
+          description: 'Стул упал',
+        },
+        {
+          name: 'cigarette_pack_crumple',
+          description: 'Скомкал сигареты',
+        },
+        {
+          name: 'clench2',
+          description: 'Похоже на звук какой-то кнопки',
+        },
+        {
+          name: 'click_1',
+          description: 'Клик тихий',
+        },
+        {
+          name: 'click_2',
+          description: 'Клик погромче',
+        },
+        {
+          name: 'click_3',
+          description: 'Клик ещё громче',
+        },
+        {
+          name: 'close_cabinet',
+          description: 'Аккуратное закрытие двери',
+        },
+        {
+          name: 'close_door_1',
+          description: 'Хлопок двери',
+        },
+        {
+          name: 'close_door_campus_1',
+          description: 'Закрытие двери более резкое',
+        },
+        {
+          name: 'close_door_clubs_nextroom',
+          description: 'Звук закрытия двери например в подсобку',
+        },
+        {
+          name: 'close_water_sink',
+          description: 'Завернул ручку крана',
+        },
+        {
+          name: 'computer_noise',
+          description: 'Шум системного блока',
+        },
+        {
+          name: 'computer_screen_static',
+          description: 'Звук монитора с помехами',
+        },
+        {
+          name: 'concert_applause',
+          description: 'Аплодисменты',
+        },
+        {
+          name: 'cooking_eggs_1',
+          description: 'Разбивают и мешают яйца',
+        },
+        {
+          name: 'cooking_eggs_2',
+          description: 'Жарят яйца',
+        },
+        {
+          name: 'cooling_bus_motor',
+          description: 'Работающий кондиционер и капли дождя по металлу',
+        },
+        {
+          name: 'cooling_engine_loop',
+          description: 'Капли дождя по дереву гулко',
+        },
+        {
+          name: 'dinner_horn_processed',
+          description: 'Горн к еде',
+        },
+        {
+          name: 'dinner_jingle_normal',
+          description: 'Горн к еде музыкальный',
+        },
+        {
+          name: 'dinner_jingle_speaker',
+          description: 'Горн к еде музыкальный чуть приглушённый',
+        },
+        {
+          name: 'dinner_jingle_speaker_tape',
+          description: 'Стук по микрофону и музыкальный горн к еде',
+        },
+        {
+          name: 'door_bell',
+          description: 'Звонок в дверь',
+        },
+        {
+          name: 'door_squeak_light',
+          description: '',
+        },
+        {
+          name: 'draw_water',
+          description: '',
+        },
+        {
+          name: 'drawer_rattle',
+          description: '',
+        },
+        {
+          name: 'drop_alisa_bag',
+          description: '',
+        },
+        {
+          name: 'drop_pipe',
+          description: '',
+        },
+        {
+          name: 'dropped_chair',
+          description: '',
+        },
+        {
+          name: 'eat_apple',
+          description: '',
+        },
+        {
+          name: 'energy_door_bus',
+          description: '',
+        },
+        {
+          name: 'face_slap',
+          description: '',
+        },
+        {
+          name: 'fall_grass',
+          description: '',
+        },
+        {
+          name: 'fall_metal_door',
+          description: '',
+        },
+        {
+          name: 'fall_wood_floor',
+          description: '',
+        },
+        {
+          name: 'far_steps',
+          description: '',
+        },
+        {
+          name: 'forest_fireplace',
+          description: '',
+        },
+        {
+          name: 'ghost_children_laugh',
+          description: '',
+        },
+        {
+          name: 'grate_hand_fall',
+          description: '',
+        },
+        {
+          name: 'grate_open_hand',
+          description: '',
+        },
+        {
+          name: 'gusty_wind',
+          description: '',
+        },
+        {
+          name: 'hatch_drop',
+          description: '',
+        },
+        {
+          name: 'head_explode',
+          description: '',
+        },
+        {
+          name: 'head_heartbeat',
+          description: '',
+        },
+        {
+          name: 'hell_alarm_clock',
+          description: '',
+        },
+        {
+          name: 'hell_crickets_1',
+          description: '',
+        },
+        {
+          name: 'hell_crickets_2',
+          description: '',
+        },
+        {
+          name: 'hell_crickets_3',
+          description: '',
+        },
+        {
+          name: 'hell_crickets_4',
+          description: '',
+        },
+        {
+          name: 'hiding_in_bush',
+          description: '',
+        },
+        {
+          name: 'home_phone_break',
+          description: '',
+        },
+        {
+          name: 'home_phone_ring',
+          description: '',
+        },
+        {
+          name: 'home_phone_take',
+          description: '',
+        },
+        {
+          name: 'ignite_torch',
+          description: '',
+        },
+        {
+          name: 'ikarus_arrive',
+          description: '',
+        },
+        {
+          name: 'ikarus_open_doors',
+          description: '',
+        },
+        {
+          name: 'inhale',
+          description: '',
+        },
+        {
+          name: 'insert_crowbar_door',
+          description: '',
+        },
+        {
+          name: 'intro_bus_door_open',
+          description: '',
+        },
+        {
+          name: 'intro_bus_engine_loop',
+          description: '',
+        },
+        {
+          name: 'intro_bus_engine_start',
+          description: '',
+        },
+        {
+          name: 'intro_bus_stop_sigh',
+          description: '',
+        },
+        {
+          name: 'intro_bus_stop_steps',
+          description: '',
+        },
+        {
+          name: 'intro_bus_transition',
+          description: '',
+        },
+        {
+          name: 'jump_into_hole',
+          description: '',
+        },
+        {
+          name: 'jump_into_hole_2',
+          description: '',
+        },
+        {
+          name: 'jump_into_hole_3',
+          description: '',
+        },
+        {
+          name: 'jump_over_hole',
+          description: '',
+        },
+        {
+          name: 'key_drawer',
+          description: '',
+        },
+        {
+          name: 'keyboard_mouse',
+          description: '',
+        },
+        {
+          name: 'keyboard_mouse_computer_noise',
+          description: '',
+        },
+        {
+          name: 'keys_rattle',
+          description: '',
+        },
+        {
+          name: 'knock_door2',
+          description: '',
+        },
+        {
+          name: 'knock_door3_dull',
+          description: '',
+        },
+        {
+          name: 'knock_door6_closed',
+          description: '',
+        },
+        {
+          name: 'knock_door7_polite',
+          description: '',
+        },
+        {
+          name: 'knock_door_closed_hard1',
+          description: '',
+        },
+        {
+          name: 'knock_door_closed_hard2',
+          description: '',
+        },
+        {
+          name: 'knock_glass',
+          description: '',
+        },
+        {
+          name: 'knocking_door_2',
+          description: '',
+        },
+        {
+          name: 'knocking_door_outside',
+          description: '',
+        },
+        {
+          name: 'lena_hits_alisa',
+          description: '',
+        },
+        {
+          name: 'lena_plays_tennis_fail',
+          description: '',
+        },
+        {
+          name: 'light_candle',
+          description: '',
+        },
+        {
+          name: 'lock_click',
+          description: '',
+        },
+        {
+          name: 'lock_close',
+          description: '',
+        },
+        {
+          name: 'lock_open',
+          description: '',
+        },
+        {
+          name: 'lock_open_close_1',
+          description: '',
+        },
+        {
+          name: 'match_candle',
+          description: '',
+        },
+        {
+          name: 'medpunkt_door_open',
+          description: '',
+        },
+        {
+          name: 'menu_gate',
+          description: '',
+        },
+        {
+          name: 'metal_door_handle_rattle',
+          description: '',
+        },
+        {
+          name: 'metal_door_heavy_close',
+          description: '',
+        },
+        {
+          name: 'metal_door_large_close_basement',
+          description: '',
+        },
+        {
+          name: 'miku_song_learn1',
+          description: '',
+        },
+        {
+          name: 'miku_song_learn2',
+          description: '',
+        },
+        {
+          name: 'muffled_explosion',
+          description: '',
+        },
+        {
+          name: 'mystery_movement',
+          description: '',
+        },
+        {
+          name: 'nightmare_explosion',
+          description: '',
+        },
+        {
+          name: 'nightmare_underground_rumble',
+          description: '',
+        },
+        {
+          name: 'open_cabinet_1',
+          description: '',
+        },
+        {
+          name: 'open_cabinet_2',
+          description: '',
+        },
+        {
+          name: 'open_cupboard',
+          description: '',
+        },
+        {
+          name: 'open_dooor_campus_1',
+          description: '',
+        },
+        {
+          name: 'open_dooor_campus_2',
+          description: '',
+        },
+        {
+          name: 'open_door_1',
+          description: '',
+        },
+        {
+          name: 'open_door_2',
+          description: '',
+        },
+        {
+          name: 'open_door_clubs',
+          description: '',
+        },
+        {
+          name: 'open_door_clubs_2',
+          description: '',
+        },
+        {
+          name: 'open_door_clubs_nextroom',
+          description: '',
+        },
+        {
+          name: 'open_door_kick',
+          description: '',
+        },
+        {
+          name: 'open_door_mines',
+          description: '',
+        },
+        {
+          name: 'open_door_mines_metal',
+          description: '',
+        },
+        {
+          name: 'open_door_squeak_2',
+          description: '',
+        },
+        {
+          name: 'open_door_strong',
+          description: '',
+        },
+        {
+          name: 'open_drapes',
+          description: '',
+        },
+        {
+          name: 'open_journal',
+          description: '',
+        },
+        {
+          name: 'open_metal_door',
+          description: '',
+        },
+        {
+          name: 'open_metal_hatch',
+          description: '',
+        },
+        {
+          name: 'open_table',
+          description: '',
+        },
+        {
+          name: 'open_water_sink',
+          description: '',
+        },
+        {
+          name: 'open_window',
+          description: '',
+        },
+        {
+          name: 'owl_far',
+          description: '',
+        },
+        {
+          name: 'paper_bag',
+          description: '',
+        },
+        {
+          name: 'pat_shoulder_hard',
+          description: '',
+        },
+        {
+          name: 'piano_head_bump',
+          description: '',
+        },
+        {
+          name: 'punch_medium',
+          description: '',
+        },
+        {
+          name: 'punch_washstand',
+          description: '',
+        },
+        {
+          name: 'put_sugar_cart',
+          description: '',
+        },
+        {
+          name: 'radio_squelch_1',
+          description: '',
+        },
+        {
+          name: 'radio_squelch_2',
+          description: '',
+        },
+        {
+          name: 'radio_tune',
+          description: '',
+        },
+        {
+          name: 'rowboat_loop',
+          description: '',
+        },
+        {
+          name: 'run_forest',
+          description: '',
+        },
+        {
+          name: 'salt_impact',
+          description: '',
+        },
+        {
+          name: 'scary_sting',
+          description: '',
+        },
+        {
+          name: 'scoop_water_cup',
+          description: '',
+        },
+        {
+          name: 'shoulder_dive_water',
+          description: '',
+        },
+        {
+          name: 'shurik_mines_far',
+          description: '',
+        },
+        {
+          name: 'shurik_opens_door',
+          description: '',
+        },
+        {
+          name: 'shurik_snore',
+          description: '',
+        },
+        {
+          name: 'signal_pistol',
+          description: '',
+        },
+        {
+          name: 'simon_applause',
+          description: '',
+        },
+        {
+          name: 'simon_fall_1',
+          description: '',
+        },
+        {
+          name: 'simon_fall_2',
+          description: '',
+        },
+        {
+          name: 'slam_door_campus',
+          description: '',
+        },
+        {
+          name: 'slavya_gets_out',
+          description: '',
+        },
+        {
+          name: 'slavya_run',
+          description: '',
+        },
+        {
+          name: 'soccer_ball_catch',
+          description: '',
+        },
+        {
+          name: 'soccer_ball_gate',
+          description: '',
+        },
+        {
+          name: 'soccer_ball_kick',
+          description: '',
+        },
+        {
+          name: 'steps_clubs_nextroom',
+          description: '',
+        },
+        {
+          name: 'stomach_growl',
+          description: '',
+        },
+        {
+          name: 'street_traffic_outside',
+          description: '',
+        },
+        {
+          name: 'suspence_bang',
+          description: '',
+        },
+        {
+          name: 'swimming',
+          description: '',
+        },
+        {
+          name: 'table_hit',
+          description: '',
+        },
+        {
+          name: 'tennis_serve_1',
+          description: '',
+        },
+        {
+          name: 'tennis_serve_2',
+          description: '',
+        },
+        {
+          name: 'terminator',
+          description: '',
+        },
+        {
+          name: 'terminator_parody',
+          description: '',
+        },
+        {
+          name: 'throw_compote',
+          description: '',
+        },
+        {
+          name: 'thunder_crack',
+          description: '',
+        },
+        {
+          name: 'thunder_rumble',
+          description: '',
+        },
+        {
+          name: 'thunder_wood',
+          description: '',
+        },
+        {
+          name: 'torch',
+          description: '',
+        },
+        {
+          name: 'tree_branches',
+          description: '',
+        },
+        {
+          name: 'uliana_jumps_down',
+          description: '',
+        },
+        {
+          name: 'underwater_dive',
+          description: '',
+        },
+        {
+          name: 'unlock_door_campus',
+          description: '',
+        },
+        {
+          name: 'unlock_medpunkt_door',
+          description: '',
+        },
+        {
+          name: 'unzip_sleepbag',
+          description: '',
+        },
+        {
+          name: 'water_emerge',
+          description: '',
+        },
+        {
+          name: 'water_sink_stream',
+          description: '',
+        },
+        {
+          name: 'water_splash',
+          description: '',
+        },
+        {
+          name: 'wind_gust',
+          description: '',
+        },
+        {
+          name: 'wood_floor_squeak',
+          description: '',
+        },
+        {
+          name: 'wood_friction',
+          description: '',
+        },
       ],
     }
   },
