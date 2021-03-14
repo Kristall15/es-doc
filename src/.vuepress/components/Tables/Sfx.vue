@@ -201,7 +201,7 @@ export default {
         },
         {
           name: 'cellular_phone_error',
-          description: 'Смартфон, нет сигнала',
+          description: 'Смартфон (телефон), нет сигнала',
         },
         {
           name: 'chair_fall',
