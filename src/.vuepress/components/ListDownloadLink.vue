@@ -1,8 +1,8 @@
 <template>
   <p>
-    <a @click="downloadData()" :href="textData" :download="file"
-      >Скачать список</a
-    >
+    <a @click="downloadData()" :href="textData" :download="file">
+      Скачать список
+    </a>
   </p>
 </template>
 
