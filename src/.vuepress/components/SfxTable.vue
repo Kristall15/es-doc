@@ -65,7 +65,7 @@ export default {
         },
         {
           name: 'alisa_picklock',
-          description: 'Алиса ковыряет ключами',
+          description: 'Алиса вскрывает дверь в столовую отмычкой',
         },
         {
           name: 'angry_ulyana',
@@ -85,11 +85,11 @@ export default {
         },
         {
           name: 'blanket_off',
-          description: 'Прыжок на кровать 1',
+          description: 'Всполох ткани/одеяла',
         },
         {
           name: 'blanket_off_stand',
-          description: 'Падение на кровать 2, больше шума',
+          description: 'Сильный всполох ткани/одеяла',
         },
         {
           name: 'blow_out_candle',
@@ -97,7 +97,7 @@ export default {
         },
         {
           name: 'boat_impact',
-          description: 'Столкновение лодок',
+          description: 'Удар лодки о сушу',
         },
         {
           name: 'body_bump',
@@ -121,7 +121,7 @@ export default {
         },
         {
           name: 'break_cupboard',
-          description: 'Сломали что-то',
+          description: 'Сломали шкаф',
         },
         {
           name: 'break_flashlight',
@@ -149,7 +149,7 @@ export default {
         },
         {
           name: 'bus_honk',
-          description: 'Гудок машины',
+          description: 'Гудок автобуса',
         },
         {
           name: 'bus_idle',
@@ -177,11 +177,11 @@ export default {
         },
         {
           name: 'bush_body_fall',
-          description: 'Падение тела',
+          description: 'Падение тела в кусты',
         },
         {
           name: 'bush_leaves',
-          description: 'Шум сухих листьев',
+          description: 'Кто-то выбежал из кустов',
         },
         {
           name: 'campus_door_rattle',
@@ -213,7 +213,7 @@ export default {
         },
         {
           name: 'clench2',
-          description: 'Похоже на звук какой-то кнопки',
+          description: 'Стискивание',
         },
         {
           name: 'click_1',
@@ -229,7 +229,7 @@ export default {
         },
         {
           name: 'close_cabinet',
-          description: 'Аккуратное закрытие двери',
+          description: 'Закрытие дверцы шкафчика',
         },
         {
           name: 'close_door_1',
@@ -241,11 +241,11 @@ export default {
         },
         {
           name: 'close_door_clubs_nextroom',
-          description: 'Звук закрытия двери например в подсобку',
+          description: 'Звук закрытия двери, ведущей в подсобку',
         },
         {
           name: 'close_water_sink',
-          description: 'Завернул ручку крана',
+          description: 'Закрытие ручки крана',
         },
         {
           name: 'computer_noise',
@@ -269,11 +269,11 @@ export default {
         },
         {
           name: 'cooling_bus_motor',
-          description: 'Работающий кондиционер и капли дождя по металлу',
+          description: 'Звук остывания мотора автобуса',
         },
         {
           name: 'cooling_engine_loop',
-          description: 'Капли дождя по дереву гулко',
+          description: 'Зацикленный звук остывания мотора',
         },
         {
           name: 'dinner_horn_processed',
@@ -297,623 +297,623 @@ export default {
         },
         {
           name: 'door_squeak_light',
-          description: '',
+          description: 'Скрип двери',
         },
         {
           name: 'draw_water',
-          description: '',
+          description: 'Звук захода в воду',
         },
         {
           name: 'drawer_rattle',
-          description: '',
+          description: 'Звук дергания замка',
         },
         {
           name: 'drop_alisa_bag',
-          description: '',
+          description: 'Падение сумки Алисы',
         },
         {
           name: 'drop_pipe',
-          description: '',
+          description: 'Звук падения трубы',
         },
         {
           name: 'dropped_chair',
-          description: '',
+          description: 'Уронили стул',
         },
         {
           name: 'eat_apple',
-          description: '',
+          description: 'Звук откусывания яблока',
         },
         {
           name: 'energy_door_bus',
-          description: '',
+          description: 'Удар силового поля и падение тела',
         },
         {
           name: 'face_slap',
-          description: '',
+          description: 'Пощёчина',
         },
         {
           name: 'fall_grass',
-          description: '',
+          description: 'Падение на траву',
         },
         {
           name: 'fall_metal_door',
-          description: '',
+          description: 'Падение железной двери в катакомбах',
         },
         {
           name: 'fall_wood_floor',
-          description: '',
+          description: 'Падение на деревянный пол',
         },
         {
           name: 'far_steps',
-          description: '',
+          description: 'Шаги вдалеке',
         },
         {
           name: 'forest_fireplace',
-          description: '',
+          description: 'Костёр',
         },
         {
           name: 'ghost_children_laugh',
-          description: '',
+          description: 'Смех детей-призраков',
         },
         {
           name: 'grate_hand_fall',
-          description: '',
+          description: 'Звук выламывания решётки',
         },
         {
           name: 'grate_open_hand',
-          description: '',
+          description: 'Звук выламывания решётки2',
         },
         {
           name: 'gusty_wind',
-          description: '',
+          description: 'Ветер',
         },
         {
           name: 'hatch_drop',
-          description: '',
+          description: 'Открытие люка',
         },
         {
           name: 'head_explode',
-          description: '',
+          description: 'Удар по голове',
         },
         {
           name: 'head_heartbeat',
-          description: '',
+          description: 'Сердцебиение',
         },
         {
           name: 'hell_alarm_clock',
-          description: '',
+          description: 'Адский будильник',
         },
         {
           name: 'hell_crickets_1',
-          description: '',
+          description: 'Сверчки',
         },
         {
           name: 'hell_crickets_2',
-          description: '',
+          description: 'Сверчки2',
         },
         {
           name: 'hell_crickets_3',
-          description: '',
+          description: 'Сверчки3',
         },
         {
           name: 'hell_crickets_4',
-          description: '',
+          description: 'Сверчки4',
         },
         {
           name: 'hiding_in_bush',
-          description: '',
+          description: 'Спрятались в кусты',
         },
         {
           name: 'home_phone_break',
-          description: '',
+          description: 'Ломаем домашний телефон',
         },
         {
           name: 'home_phone_ring',
-          description: '',
+          description: 'Звонок на домашний телефон',
         },
         {
           name: 'home_phone_take',
-          description: '',
+          description: 'Взяли трубку домашнего телефона',
         },
         {
           name: 'ignite_torch',
-          description: '',
+          description: 'Зажгли факел',
         },
         {
           name: 'ikarus_arrive',
-          description: '',
+          description: 'Автобус подъехал',
         },
         {
           name: 'ikarus_open_doors',
-          description: '',
+          description: 'Открытие дверей автобуса',
         },
         {
           name: 'inhale',
-          description: '',
+          description: 'Вдох/выдох',
         },
         {
           name: 'insert_crowbar_door',
-          description: '',
+          description: 'Вставили монтировку в щель железной двери',
         },
         {
           name: 'intro_bus_door_open',
-          description: '',
+          description: 'Звук открытия дверей и отъезда автобуса',
         },
         {
           name: 'intro_bus_engine_loop',
-          description: '',
+          description: 'Зацикленный звук мотора автобуса, снаружи',
         },
         {
           name: 'intro_bus_engine_start',
-          description: '',
+          description: 'Автобус подъехал, звук мотора',
         },
         {
           name: 'intro_bus_stop_sigh',
-          description: '',
+          description: 'Вдох на остановке',
         },
         {
           name: 'intro_bus_stop_steps',
-          description: '',
+          description: 'Шаги по снегу, уличный траффик',
         },
         {
           name: 'intro_bus_transition',
-          description: '',
+          description: 'Воспоминания2',
         },
         {
           name: 'jump_into_hole',
-          description: '',
+          description: 'Прыгнули в яму',
         },
         {
           name: 'jump_into_hole_2',
-          description: '',
+          description: 'Прыгнули в яму2',
         },
         {
           name: 'jump_into_hole_3',
-          description: '',
+          description: 'Прыгнули в яму3',
         },
         {
           name: 'jump_over_hole',
-          description: '',
+          description: 'Перепрыгнули через яму',
         },
         {
           name: 'key_drawer',
-          description: '',
+          description: 'Открыли ключом шкафчик, закрыли.',
         },
         {
           name: 'keyboard_mouse',
-          description: '',
+          description: 'Звуки работы за компьютером',
         },
         {
           name: 'keyboard_mouse_computer_noise',
-          description: '',
+          description: 'Звуки работы за компьютером2',
         },
         {
           name: 'keys_rattle',
-          description: '',
+          description: 'Звук связки ключей',
         },
         {
           name: 'knock_door2',
-          description: '',
+          description: 'Стук в дверь',
         },
         {
           name: 'knock_door3_dull',
-          description: '',
+          description: 'Гулкий стук в дверь',
         },
         {
           name: 'knock_door6_closed',
-          description: '',
+          description: 'Попытка открытия закрытой двери',
         },
         {
           name: 'knock_door7_polite',
-          description: '',
+          description: 'Стук в дверь2',
         },
         {
           name: 'knock_door_closed_hard1',
-          description: '',
+          description: 'Попытка открытия закрытой двери2',
         },
         {
           name: 'knock_door_closed_hard2',
-          description: '',
+          description: 'Попытка открытия закрытой двери3',
         },
         {
           name: 'knock_glass',
-          description: '',
+          description: 'Стук в окно',
         },
         {
           name: 'knocking_door_2',
-          description: '',
+          description: 'Стук в дверь3',
         },
         {
           name: 'knocking_door_outside',
-          description: '',
+          description: 'Стук в дверь, находимся внутри.',
         },
         {
           name: 'lena_hits_alisa',
-          description: '',
+          description: 'Лена ударила Алису',
         },
         {
           name: 'lena_plays_tennis_fail',
-          description: '',
+          description: 'Лена играет в теннис',
         },
         {
           name: 'light_candle',
-          description: '',
+          description: 'Зажигалкой зажгли свечку',
         },
         {
           name: 'lock_click',
-          description: '',
+          description: 'Щелчок замка1',
         },
         {
           name: 'lock_close',
-          description: '',
+          description: 'Щелчок замка2',
         },
         {
           name: 'lock_open',
-          description: '',
+          description: 'Щелчок замка3',
         },
         {
           name: 'lock_open_close_1',
-          description: '',
+          description: 'Щелчок замка4',
         },
         {
           name: 'match_candle',
-          description: '',
+          description: 'Спичкой зажгли свечку',
         },
         {
           name: 'medpunkt_door_open',
-          description: '',
+          description: 'Открытие двери в медпункт',
         },
         {
           name: 'menu_gate',
-          description: '',
+          description: 'Звук калитки',
         },
         {
           name: 'metal_door_handle_rattle',
-          description: '',
+          description: 'Попытка открытия железной двери',
         },
         {
           name: 'metal_door_heavy_close',
-          description: '',
+          description: 'Попытка открытия железной двери в катакомбах, эхо',
         },
         {
           name: 'metal_door_large_close_basement',
-          description: '',
+          description: 'Удар по подвальной двери',
         },
         {
           name: 'miku_song_learn1',
-          description: '',
+          description: 'Мику играет на гитаре',
         },
         {
           name: 'miku_song_learn2',
-          description: '',
+          description: 'Семён играет на гитаре',
         },
         {
           name: 'muffled_explosion',
-          description: '',
+          description: 'Взрыв',
         },
         {
           name: 'mystery_movement',
-          description: '',
+          description: 'Движение',
         },
         {
           name: 'nightmare_explosion',
-          description: '',
+          description: 'Взрыв, осыпалась земля, гранит',
         },
         {
           name: 'nightmare_underground_rumble',
-          description: '',
+          description: 'Взрыв снаружи, звук грома, осыпалась земля, гранит',
         },
         {
           name: 'open_cabinet_1',
-          description: '',
+          description: 'Открыли шкафчик',
         },
         {
           name: 'open_cabinet_2',
-          description: '',
+          description: 'Открыли шкафчик2',
         },
         {
           name: 'open_cupboard',
-          description: '',
+          description: 'Открыли шкафчик3',
         },
         {
           name: 'open_dooor_campus_1',
-          description: '',
+          description: 'Открыли дверь',
         },
         {
           name: 'open_dooor_campus_2',
-          description: '',
+          description: 'Открыли дверь2',
         },
         {
           name: 'open_door_1',
-          description: '',
+          description: 'Открыли дверь3',
         },
         {
           name: 'open_door_2',
-          description: '',
+          description: 'Открыли дверь4',
         },
         {
           name: 'open_door_clubs',
-          description: '',
+          description: 'Открыли дверь, клубы',
         },
         {
           name: 'open_door_clubs_2',
-          description: '',
+          description: 'Открыли дверь, клубы2',
         },
         {
           name: 'open_door_clubs_nextroom',
-          description: '',
+          description: 'Открытие двери в клубы, находимся в другой комнате',
         },
         {
           name: 'open_door_kick',
-          description: '',
+          description: 'Удар по двери',
         },
         {
           name: 'open_door_mines',
-          description: '',
+          description: 'Открытие деревянной двери в шахтах',
         },
         {
           name: 'open_door_mines_metal',
-          description: '',
+          description: 'Открытие железной двери в шахтах',
         },
         {
           name: 'open_door_squeak_2',
-          description: '',
+          description: 'Скрип двери',
         },
         {
           name: 'open_door_strong',
-          description: '',
+          description: 'Резко открыли дверь',
         },
         {
           name: 'open_drapes',
-          description: '',
+          description: 'Открыли ставни',
         },
         {
           name: 'open_journal',
-          description: '',
+          description: 'Открыли журнал, листают',
         },
         {
           name: 'open_metal_door',
-          description: '',
+          description: 'Открыли железную дверь, медпункт',
         },
         {
           name: 'open_metal_hatch',
-          description: '',
+          description: 'Открытие люка',
         },
         {
           name: 'open_table',
-          description: '',
+          description: 'Открытие дверцы шкафчика',
         },
         {
           name: 'open_water_sink',
-          description: '',
+          description: 'Открытие вентиля, умывальники',
         },
         {
           name: 'open_window',
-          description: '',
+          description: 'Открыли окно',
         },
         {
           name: 'owl_far',
-          description: '',
+          description: 'Сова вдалеке',
         },
         {
           name: 'paper_bag',
-          description: '',
+          description: 'Перелистнули журнал/Взяли в руку фотографию',
         },
         {
           name: 'pat_shoulder_hard',
-          description: '',
+          description: 'Положили руку на плечо',
         },
         {
           name: 'piano_head_bump',
-          description: '',
+          description: 'Удар головой о пианино',
         },
         {
           name: 'punch_medium',
-          description: '',
+          description: 'Ударили',
         },
         {
           name: 'punch_washstand',
-          description: '',
+          description: 'Ударили2',
         },
         {
           name: 'put_sugar_cart',
-          description: '',
+          description: 'Поклали мешок с сахаром',
         },
         {
           name: 'radio_squelch_1',
-          description: '',
+          description: 'Шум рации',
         },
         {
           name: 'radio_squelch_2',
-          description: '',
+          description: 'Шум рации2',
         },
         {
           name: 'radio_tune',
-          description: '',
+          description: 'Звук поиска радиостанции',
         },
         {
           name: 'rowboat_loop',
-          description: '',
+          description: 'Плывём на лодке',
         },
         {
           name: 'run_forest',
-          description: '',
+          description: 'Бежим по лесу',
         },
         {
           name: 'salt_impact',
-          description: '',
+          description: 'Ударили по столу в столовой',
         },
         {
           name: 'scary_sting',
-          description: '',
+          description: 'Звук скримера',
         },
         {
           name: 'scoop_water_cup',
-          description: '',
+          description: 'Набрали в стакан воды',
         },
         {
           name: 'shoulder_dive_water',
-          description: '',
+          description: 'Ныряем под воду',
         },
         {
           name: 'shurik_mines_far',
-          description: '',
+          description: 'Шагаем по шахатам',
         },
         {
           name: 'shurik_opens_door',
-          description: '',
+          description: 'Открытие двери в катакомбах',
         },
         {
           name: 'shurik_snore',
-          description: '',
+          description: 'Храп',
         },
         {
           name: 'signal_pistol',
-          description: '',
+          description: 'Сигнальный пистолет, выстрел',
         },
         {
           name: 'simon_applause',
-          description: '',
+          description: 'Апплодисменты',
         },
         {
           name: 'simon_fall_1',
-          description: '',
+          description: 'Семён провалился в яму',
         },
         {
           name: 'simon_fall_2',
-          description: '',
+          description: 'Семён провалился в яму2',
         },
         {
           name: 'slam_door_campus',
-          description: '',
+          description: 'Удар по двери',
         },
         {
           name: 'slavya_gets_out',
-          description: '',
+          description: 'Открытие дверцы, прыжок на землю',
         },
         {
           name: 'slavya_run',
-          description: '',
+          description: 'Прибежали издалека',
         },
         {
           name: 'soccer_ball_catch',
-          description: '',
+          description: 'Поймали мяч',
         },
         {
           name: 'soccer_ball_gate',
-          description: '',
+          description: 'Ударили по мячу, попали в ворота',
         },
         {
           name: 'soccer_ball_kick',
-          description: '',
+          description: 'Ударили по мячу',
         },
         {
           name: 'steps_clubs_nextroom',
-          description: '',
+          description: 'Шаги',
         },
         {
           name: 'stomach_growl',
-          description: '',
+          description: 'Желудок',
         },
         {
           name: 'street_traffic_outside',
-          description: '',
+          description: 'Уличный траффик снаружи',
         },
         {
           name: 'suspence_bang',
-          description: '',
+          description: 'Звук скримера2',
         },
         {
           name: 'swimming',
-          description: '',
+          description: 'Плаваем',
         },
         {
           name: 'table_hit',
-          description: '',
+          description: 'Ударили по столу',
         },
         {
           name: 'tennis_serve_1',
-          description: '',
+          description: 'Ударили ракеткой по воланчику',
         },
         {
           name: 'tennis_serve_2',
-          description: '',
+          description: 'Ударили ракеткой по воланчику2',
         },
         {
           name: 'terminator',
-          description: '',
+          description: 'Главная тема Терминатора',
         },
         {
           name: 'terminator_parody',
-          description: '',
+          description: 'Главная тема Терминатора (пародия)',
         },
         {
           name: 'throw_compote',
-          description: '',
+          description: 'Вылили компот',
         },
         {
           name: 'thunder_crack',
-          description: '',
+          description: 'Удар грома',
         },
         {
           name: 'thunder_rumble',
-          description: '',
+          description: 'Звук грозы, зациклен',
         },
         {
           name: 'thunder_wood',
-          description: '',
+          description: 'Удар грома2',
         },
         {
           name: 'torch',
-          description: '',
+          description: 'Звук факела',
         },
         {
           name: 'tree_branches',
-          description: '',
+          description: 'Шумят кроны деревьев',
         },
         {
           name: 'uliana_jumps_down',
-          description: '',
+          description: 'Ульяна спрыгнула',
         },
         {
           name: 'underwater_dive',
-          description: '',
+          description: 'Плаваем под водой',
         },
         {
           name: 'unlock_door_campus',
-          description: '',
+          description: 'Открыли дверь ключом',
         },
         {
           name: 'unlock_medpunkt_door',
-          description: '',
+          description: 'Открыли дверь ключом, медпункт',
         },
         {
           name: 'unzip_sleepbag',
-          description: '',
+          description: 'Расстегнули спальный мешок',
         },
         {
           name: 'water_emerge',
-          description: '',
+          description: 'Всплеск воды',
         },
         {
           name: 'water_sink_stream',
-          description: '',
+          description: 'Зацикленный звук воды из умывальника',
         },
         {
           name: 'water_splash',
-          description: '',
+          description: 'Всплеск воды, умывальники',
         },
         {
           name: 'wind_gust',
-          description: '',
+          description: 'Звук ветра',
         },
         {
           name: 'wood_floor_squeak',
-          description: '',
+          description: 'Скрипнула половица',
         },
         {
           name: 'wood_friction',
-          description: '',
+          description: 'Активно зарисовываем карандашём',
         },
       ],
     }
