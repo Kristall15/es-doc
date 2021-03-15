@@ -1,5 +1,7 @@
 # es-doc
 
+![Главная страница](.github/preview.jpg)
+
 Документация по созданию модов для БЛ.
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/yegorgunko/es-doc?style=for-the-badge)
@@ -8,8 +10,6 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/yegorgunko/es-doc?style=for-the-badge)
 
 ![GitHub](https://img.shields.io/github/license/yegorgunko/es-doc?style=for-the-badge)
-
-![Главная страница](.github/preview.jpg)
 
 ## Запуск проекта
 
