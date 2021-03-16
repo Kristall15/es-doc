@@ -7,3 +7,7 @@
 ### Фоны
 
 <Tables-Community-Bgs />
+
+### CG
+
+<Tables-Community-Cgs />
