@@ -5,10 +5,12 @@
 ## Благодарности
 
 - Создателям отличного [гайда в Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=690911411), на котором основано данное руководство:
-  - [HenсoDesu](https://steamcommunity.com/id/hencodesu) - за создание гайда в Steam
-  - [Владе](http://steamcommunity.com/id/cool_vlad) - отдельно за создание интересных модов и за помощь в дополнениии руководства в Steam
-  - [Лене](http://steamcommunity.com/id/lena_sova) - отдельно за помощь в коментариях всем, кто столкнулся с затруднениями в Steam и создание полезных модификаций
-- [Nikolas Khikkanov](https://vk.com/itsmlg) - за помощь в создании данного руководства
+  - [HenсoDesu](https://steamcommunity.com/id/hencodesu) - за создание гайда в Steam.
+  - [Владе](http://steamcommunity.com/id/cool_vlad) - отдельно за создание интересных модов и за помощь в дополнениии руководства в Steam.
+  - [Лене](http://steamcommunity.com/id/lena_sova) - отдельно за помощь в коментариях всем, кто столкнулся с затруднениями в Steam и создание полезных модификаций.
+- [Nikolas Khikkanov](https://vk.com/itsmlg) - за помощь в создании данного руководства.
+- Авторам модификации "7 Дней Лета" (позднее - ["7 Дней Лета - Lost Alpha"](https://vk.com/bl_7dl)) за предоставленные ресурсы. Использование только в рамках лицензии [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru).
+- Группе [Как создать свой мод для игры Бесконечное Лето](https://vk.com/myesmod) и всем тем, кто наполнял её полезным контентом, часть из которого присуствует в данном руководстве.
 
 ## Предпосылки
 
