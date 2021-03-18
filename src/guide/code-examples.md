@@ -40,36 +40,6 @@ init:
 
 <<< @/src/.vuepress/public/code/scripts/defineAssets.rpy
 
-    for file in renpy.list_files():
-        if MOD_ID in file:
-            file_name = path.splitext(path.basename(file))[0]
-            file_split = file.split("/")
-
-            if file.endswith((".png", ".jpg")):
-                if "sprites" in file_split:
-                    renpy.image(
-                        file_name,
-                        ConditionSwitch(
-                            "persistent.sprite_time == 'sunset'",
-                            im.MatrixColor(
-                                file,
-                                im.matrix.tint(0.94, 0.82, 1.0)
-                            ),
-                            "persistent.sprite_time == 'night'",
-                            im.MatrixColor(
-                                file,
-                                im.matrix.tint(0.63, 0.78, 0.82)
-                            ),
-                            True,
-                            file
-                        )
-                    )
-                else:
-                    renpy.image(file_name, file)
-            elif file.endswith((".wav", ".mp2", ".mp3", ".ogg", ".opus")):
-                globals()[file_name] = file
-```
-
 ## Продолжение проигрывания с момента остановки
 
 Данный отрезок позволяет приостановить приостановить проигрыш музыки или звука на определённом отрезке, чтобы позже можно было её снова воспроизвести с места остановки.
@@ -95,3 +65,52 @@ label test:
     "Аудио будет воспроизведено с момента остановки..."
     return
 ```
+
+## Эффект падающих частиц
+
+В коде игры уже предусмотрено использование частиц - снега. Имеются два варианта:
+
+- `snow` - `image snow = Snow("images/anim/snow.png")`.
+- `heavy_snow` - `image heavy_snow = Snow("images/anim/snow.png", max_particles=500)`.
+
+Эти два варианта уже объявлены в игре глобально и могут использоваться как [изображение](https://www.renpy.org/doc/html/displaying_images.html#image) объявленное с помощью [`Image Statement`](https://www.renpy.org/doc/html/displaying_images.html#image-statement).
+
+Пример использования из игры:
+
+```renpy{5-6,11-12}
+label epilogue_sl:
+    "..."
+    window hide
+    scene bg bus_stop
+    show snow
+    with fade2
+    window show
+    "..."
+    window hide
+    hide snow
+    show heavy_snow
+    with fade
+    window show
+```
+
+Вы также можете создать изображение со своими частицами (например, каплями дождя):
+
+```renpy
+define image rain = Snow("<путь к изображению>", max_particles=50, speed=150, wind=100, xborder=(0,100), yborder=(50,400))
+```
+
+В примере выше указаны параметры, заданные по умолчанию. Вы можете изменить их по вашему желанию:
+
+- `image`: `String` - путь к изображению, которое будет использоваться как частица.
+- `max_particles`: `Int` - максимальное количество частиц одновременно на экране.
+- `speed`: `Float` - скорость вертикального полёта частиц. Чем больше значение, тем быстрее частицы будут падать.
+- `wind`: `Float` - максимальная сила ветра, которая будет взаимодействовать с частицами.
+- `xborder`: `(min: Int, max: Int): Tuple` - **горизонтальные** границы, в которых будут случайно появляться частицы. По умолчанию - весь экран.
+- `yborder`: `(min: Int, max: Int): Tuple` - **вертикальные** границы, в которых будут случайно появляться частицы. По умолчанию - весь экран.
+
+::: details Реализация функции `Snow` в игре
+
+<a href="/src/.vuepress/public/code/scripts/snow.rpy" download>Скачать скрипт</a>
+
+<<< @/src/.vuepress/public/code/scripts/snow.rpy
+:::
