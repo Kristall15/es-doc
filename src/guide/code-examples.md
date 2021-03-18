@@ -36,13 +36,9 @@ init:
 Для того, чтобы пункт 3 сработал, нужно хранить спрайты в папке `sprites`.
 :::
 
-```renpy
-init python:
-    from os import path
+<a href="/src/.vuepress/public/code/scripts/defineAssets.rpy" download>Скачать скрипт</a>
 
-    MOD_ID = ""
-    MOD_NAME = ""
-    COLOR_SPRITES = False # True
+<<< @/src/.vuepress/public/code/scripts/defineAssets.rpy
 
     for file in renpy.list_files():
         if MOD_ID in file:
@@ -78,24 +74,9 @@ init python:
 
 Данный отрезок позволяет приостановить приостановить проигрыш музыки или звука на определённом отрезке, чтобы позже можно было её снова воспроизвести с места остановки.
 
-```renpy
-init python:
-    class PlayerPause:
-        def __init__(self, channel="music", fadein=2):
-            self.channel = channel
-            self.fadein = fadein
-            self.time = 0
-            self.file = renpy.music.get_playing(channel)
-        def pause(self, fadeout=2):
-            self.time = renpy.music.get_pos(self.channel)
-            renpy.music.stop(self.channel, fadeout)
-        def resume(self, fadein=2):
-            renpy.music.play("<from {}>{}".format(self.time, self.file), fadein=fadein)
-        def getFile(self):
-            return self.file
-        def getTime(self):
-            return self.time
-```
+<a href="/src/.vuepress/public/code/scripts/playerPause.rpy" download>Скачать скрипт</a>
+
+<<< @/src/.vuepress/public/code/scripts/playerPause.rpy
 
 Пример использования:
 
