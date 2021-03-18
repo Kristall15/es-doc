@@ -27,7 +27,7 @@ export default {
   },
   data() {
     return {
-      cgs: ['mi_dance_afar', 'mi_hugs', 'mt_dance', 'sl_piano', 'un_dance'],
+      cgs: ['mi_dance_afar', 'mi_hugs', 'mt_dance', 'sl_piano', 'un_dance', 'mi_kiss_musclub', 'mi_lineup', 'mi_me_polaroid', 'mi_salute', 'mt_salute', 'mz_grass', 'mz_roof', 'square_rain_us_lead', 'us_sheet', 'us_train'],
     }
   },
 }
