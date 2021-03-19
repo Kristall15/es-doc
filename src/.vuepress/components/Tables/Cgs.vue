@@ -80,8 +80,8 @@ export default {
           name: 'd2_mt_undressed_2',
         },
         {
-          name: 'd2_sl_swim',
           mature: true,
+          name: 'd2_sl_swim',
         },
         {
           name: 'd2_slavya_forest',
@@ -108,8 +108,8 @@ export default {
           name: 'd3_dv_scene_2',
         },
         {
-          name: 'd3_sl_bathhouse',
           mature: true,
+          name: 'd3_sl_bathhouse',
         },
         {
           name: 'd3_sl_dance',
@@ -229,8 +229,8 @@ export default {
           name: 'd5_dv_us_wash_2',
         },
         {
-          name: 'd5_dv_us_wash_3',
           mature: true,
+          name: 'd5_dv_us_wash_3',
         },
         {
           name: 'd5_dv_us_wash_4',
@@ -284,12 +284,12 @@ export default {
           name: 'd6_dv_fight_3',
         },
         {
-          name: 'd6_dv_hentai',
           mature: true,
+          name: 'd6_dv_hentai',
         },
         {
-          name: 'd6_dv_hentai_2',
           mature: true,
+          name: 'd6_dv_hentai_2',
         },
         {
           name: 'd6_pioneer',
@@ -301,16 +301,16 @@ export default {
           name: 'd6_sl_forest_2',
         },
         {
+          mature: true,
           name: 'd6_sl_hentai_1',
-          mature: true,
         },
         {
+          mature: true,
           name: 'd6_sl_hentai_2',
-          mature: true,
         },
         {
-          name: 'd6_sl_swim',
           mature: true,
+          name: 'd6_sl_swim',
         },
         {
           name: 'd6_un_evening_1',
@@ -346,20 +346,20 @@ export default {
           name: 'd7_pioneers_leaving_without_us',
         },
         {
+          mature: true,
           name: 'd7_sl_morning',
-          mature: true,
         },
         {
+          mature: true,
           name: 'd7_sl_morning_2',
-          mature: true,
         },
         {
+          mature: true,
           name: 'd7_un_hentai',
-          mature: true,
         },
         {
-          name: 'd7_un_hentai_3',
           mature: true,
+          name: 'd7_un_hentai_3',
         },
         {
           name: 'd7_un_suicide',
@@ -380,32 +380,32 @@ export default {
           name: 'epilogue_mi_1',
         },
         {
+          mature: true,
           name: 'epilogue_mi_2',
-          mature: true,
         },
         {
+          mature: true,
           name: 'epilogue_mi_3',
-          mature: true,
         },
         {
+          mature: true,
           name: 'epilogue_mi_4',
-          mature: true,
         },
         {
+          mature: true,
           name: 'epilogue_mi_5',
-          mature: true,
         },
         {
+          mature: true,
           name: 'epilogue_mi_6',
-          mature: true,
         },
         {
+          mature: true,
           name: 'epilogue_mi_7',
-          mature: true,
         },
         {
-          name: 'epilogue_mi_8',
           mature: true,
+          name: 'epilogue_mi_8',
         },
         {
           name: 'epilogue_mi_9',
@@ -420,8 +420,8 @@ export default {
           name: 'epilogue_un',
         },
         {
-          name: 'epilogue_un_bad',
           mature: true,
+          name: 'epilogue_un_bad',
         },
         {
           name: 'epilogue_un_good',
@@ -463,16 +463,25 @@ export default {
           name: 'final_all_2',
         },
         {
+          mature: true,
           name: 'miku_h_1_cenz',
-          mature: true,
         },
         {
+          mature: true,
           name: 'miku_h_2_cenz',
-          mature: true,
         },
         {
-          name: 'uvao_h_cenz',
           mature: true,
+          name: 'uvao_h_cenz',
+        },
+        {
+          name: 'zhenya1',
+        },
+        {
+          name: 'zhenya2',
+        },
+        {
+          name: 'zhenya3',
         },
       ],
     }
