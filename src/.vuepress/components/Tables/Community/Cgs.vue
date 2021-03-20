@@ -28,6 +28,7 @@ export default {
   data() {
     return {
       cgs: [
+        'boat_alone',
         'mi_dance_afar',
         'mi_fireworks',
         'mi_hugs',
