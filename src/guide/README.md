@@ -725,7 +725,7 @@ init:
 label my_mod:
     show brat movie
     "Данный видеоролик показан как спрайт."
-    hide eileen
+    hide brat
     "Ролик убран."
 ```
 
