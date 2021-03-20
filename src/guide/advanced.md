@@ -240,7 +240,9 @@ $ backdrop = "dv" # Монитор с проплывающей Алисой.
 
 Для вывода достижения в нужном вам месте вставьте следующие команды:
 
-```renpy
+```renpy{4-8}
+define myachiv = "mods/my_mod/images/myachiv.png"
+
 label my_mod:
     play sound sfx_achievement
     show myachiv at achievement_trans
@@ -251,7 +253,7 @@ label my_mod:
 
 где:
 
-- `myachiv` - Ваша картинка с достижением.
+- `myachiv` - Ваше изображение с достижением.
 
 ## Аудио каналы
 
