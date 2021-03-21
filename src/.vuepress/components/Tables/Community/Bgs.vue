@@ -94,6 +94,8 @@ export default {
         'int_dining_hall_rain_night',
         'int_dining_hall_rain_people',
         'int_dining_hall_rain_sunset',
+        'int_dining_table_day',
+        'int_dining_table_sunset',
         'int_library_basement',
         'int_library_books_day',
         'int_library_books_dropped_day',
