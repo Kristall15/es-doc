@@ -60,7 +60,7 @@ export default {
         { id: 'dreamgirl', name: '...', color: '#c0c0c0' },
         { id: 'kids', name: 'Малышня' },
         // { id: 'lk', name: 'Люркмор-кун' },
-        { id: 'dy', name: 'Голос из динамика' },
+        // { id: 'dy', name: 'Голос из динамика' },
         { id: 'message', name: 'Сообщение', color: '#c0c0c0' },
         { id: 'odn', name: 'Одногруппник', color: '#c0c0c0' },
       ],
