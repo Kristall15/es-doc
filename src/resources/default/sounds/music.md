@@ -1,3 +1,3 @@
 ### Музыка
 
-<Tables-Music />
+<Tables-Default-Sounds-Music />

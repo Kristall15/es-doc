@@ -1,3 +1,3 @@
 ### CG
 
-<Tables-Community-Cgs />
+<Tables-Community-Images-Cgs />

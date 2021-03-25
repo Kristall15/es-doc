@@ -34,12 +34,7 @@
 </template>
 
 <script>
-import ListDownloadLink from '../ListDownloadLink.vue'
-
 export default {
-  components: {
-    ListDownloadLink,
-  },
   data() {
     return {
       sfx: [

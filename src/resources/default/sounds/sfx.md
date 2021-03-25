@@ -1,3 +1,3 @@
 ### Другие звуки
 
-<Tables-Sfx />
+<Tables-Default-Sounds-Sfx />

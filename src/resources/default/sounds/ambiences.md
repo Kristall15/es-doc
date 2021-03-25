@@ -1,3 +1,3 @@
 ### Окружение
 
-<Tables-Ambiences />
+<Tables-Default-Sounds-Ambiences />

@@ -1,3 +1,3 @@
 ### Фоны
 
-<Tables-Bgs />
+<Tables-Default-Images-Bgs />

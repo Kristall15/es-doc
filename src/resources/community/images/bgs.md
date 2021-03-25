@@ -1,3 +1,3 @@
 ### Фоны
 
-<Tables-Community-Bgs />
+<Tables-Community-Images-Bgs />

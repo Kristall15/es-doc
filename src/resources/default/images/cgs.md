@@ -1,3 +1,3 @@
 ### CG
 
-<Tables-Cgs />
+<Tables-Default-Images-Cgs />

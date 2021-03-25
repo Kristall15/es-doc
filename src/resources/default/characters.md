@@ -1,3 +1,3 @@
 ### Персонажи
 
-<Tables-Characters />
+<Tables-Default-Characters />
