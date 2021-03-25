@@ -45,13 +45,56 @@ module.exports = {
       },
       {
         text: 'Таблицы ресурсов',
-        link: '/resources/',
+        items: [
+          {
+            text: 'Ресурсы игры',
+            link: '/resources/default/',
+          },
+          {
+            text: 'Ресурсы сообщества',
+            link: '/resources/community/',
+          },
+        ],
       },
     ],
     sidebar: {
       '/guide/': ['', 'videos', 'advanced', 'errors', 'code-examples'],
-      '/resources/': ['', 'community'],
-      '/': [''],
+      '/resources/': [
+        {
+          title: 'Ресурсы игры',
+          path: '/resources/default/',
+          collapsable: false,
+          children: [
+            'default/characters.md',
+            {
+              title: 'Изображения',
+              collapsable: false,
+              children: ['default/images/bgs.md', 'default/images/cgs.md'],
+            },
+            {
+              title: 'Звуки',
+              collapsable: false,
+              children: [
+                'default/sounds/ambiences.md',
+                'default/sounds/music.md',
+                'default/sounds/sfx.md',
+              ],
+            },
+          ],
+        },
+        {
+          title: 'Ресурсы сообщества',
+          path: '/resources/community/',
+          collapsable: false,
+          children: [
+            {
+              title: 'Изображения',
+              collapsable: false,
+              children: ['community/images/bgs.md', 'community/images/cgs.md'],
+            },
+          ],
+        },
+      ],
     },
     sidebarDepth: 2,
     logo: '/logo.png',
