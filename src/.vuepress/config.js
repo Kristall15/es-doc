@@ -16,13 +16,37 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['link', { rel: 'icon', href: '/images/icons/favicon.png' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#CD0000' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     [
       'meta',
       { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
     ],
-    ['link', { rel: 'icon', href: '/favicon.png' }],
+    [
+      'link',
+      {
+        rel: 'apple-touch-icon',
+        href: '/images/icons/pwa/apple-touch-icon-152x152.png',
+      },
+    ],
+    [
+      'link',
+      {
+        rel: 'mask-icon',
+        href: '/images/icons/pwa/safari-pinned-tab.png',
+        color: '#CD0000',
+      },
+    ],
+    [
+      'meta',
+      {
+        name: 'msapplication-TileImage',
+        content: '/images/icons/pwa/msapplication-icon-144x144.png',
+      },
+    ],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
   ],
 
   /**
@@ -97,7 +121,7 @@ module.exports = {
       ],
     },
     sidebarDepth: 2,
-    logo: '/logo.png',
+    logo: '/images/icons/logo.png',
   },
 
   markdown: {
@@ -108,7 +132,6 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
-    '@vuepress/plugin-back-to-top',
     [
       '@vuepress/plugin-medium-zoom',
       {
@@ -118,6 +141,17 @@ module.exports = {
         },
       },
     ],
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: {
+          message: 'Доступен новый контент.',
+          buttonText: 'Обновить',
+        },
+      },
+    ],
+    '@vuepress/plugin-back-to-top',
     'check-md',
     'img-lazy',
   ],
