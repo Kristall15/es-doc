@@ -118,5 +118,6 @@ module.exports = {
         },
       },
     ],
+    'check-md',
   ],
 }

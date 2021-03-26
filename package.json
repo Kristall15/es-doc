@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src",
-    "lint": "prettier --write . && eslint"
+    "lint": "prettier --write . && eslint",
+    "checkmd": "vuepress check-md src"
   },
   "license": "MIT",
   "devDependencies": {
@@ -15,6 +16,7 @@
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
     "prettier": "2.2.1",
-    "vuepress": "^1.5.3"
+    "vuepress": "^1.5.3",
+    "vuepress-plugin-check-md": "^0.0.2"
   }
 }
