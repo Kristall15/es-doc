@@ -11,7 +11,7 @@
           <code>scene {{ name }}</code>
         </td>
         <td>
-          <img :src="`/resources/community/images/cgs/${name}.jpg`" />
+          <img-lazy :src="`/resources/community/images/cgs/${name}.jpg`" />
         </td>
       </tr>
     </table>

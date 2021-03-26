@@ -11,7 +11,7 @@
           <code>scene cg {{ name }}</code>
         </td>
         <td>
-          <img
+          <img-lazy
             :src="`/resources/default/images/cgs/${name}.jpg`"
             :class="{ 'mature-img': mature }"
           />

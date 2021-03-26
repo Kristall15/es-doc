@@ -119,5 +119,6 @@ module.exports = {
       },
     ],
     'check-md',
+    'img-lazy',
   ],
 }
