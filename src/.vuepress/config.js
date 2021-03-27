@@ -80,9 +80,19 @@ module.exports = {
           },
         ],
       },
+      {
+        text: 'Разное',
+        link: '/misc/',
+      },
     ],
     sidebar: {
-      '/guide/': ['', 'videos', 'advanced', 'errors', 'code-examples'],
+      '/guide/': [
+        '',
+        'videos.md',
+        'advanced.md',
+        'errors.md',
+        'code-examples.md',
+      ],
       '/resources/': [
         {
           title: 'Ресурсы игры',
@@ -117,6 +127,14 @@ module.exports = {
               children: ['community/images/bgs.md', 'community/images/cgs.md'],
             },
           ],
+        },
+      ],
+      '/misc/': [
+        {
+          title: 'Разное',
+          path: '/misc/',
+          collapsable: false,
+          children: ['news-sources.md'],
         },
       ],
     },
