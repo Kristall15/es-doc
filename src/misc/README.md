@@ -1,4 +1,4 @@
 # Разное
 
-- [Новостные ресурсы](/misc/news-sources.md)
-- [Художники](/misc/artists.md)
+- [Новостные ресурсы](./news-sources.md)
+- [Художники](./artists.md)

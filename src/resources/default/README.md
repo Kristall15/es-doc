@@ -1,10 +1,10 @@
 ## Ресурсы игры
 
-- [Персонажи](/resources/default/characters.md)
+- [Персонажи](./characters.md)
 - Изображения
-  - [Фоны](/resources/default/images/bgs.md)
-  - [CG](/resources/default/images/cgs.md)
+  - [Фоны](./images/bgs.md)
+  - [CG](./images/cgs.md)
 - Звуки
-  - [Музыка](/resources/default/sounds/music.md)
-  - [Окружение](/resources/default/sounds/ambiences.md)
-  - [Другие звуки](/resources/default/sounds/sfx.md)
+  - [Музыка](./sounds/music.md)
+  - [Окружение](./sounds/ambiences.md)
+  - [Другие звуки](./sounds/sfx.md)
