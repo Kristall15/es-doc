@@ -13,29 +13,38 @@
 
 ## Запуск проекта
 
-### Зависимости
+### Предпосылки
 
-- [Node.js](https://nodejs.org/)
-- Yarn
+Необходимые инструменты:
 
-  `npm i -g yarn`
+- [Node.js](https://nodejs.org/).
+- [Yarn classic](https://classic.yarnpkg.com/) (рекомендуется) или [NPM](https://www.npmjs.com/).
+- [Visual Studio Code](https://code.visualstudio.com/) (рекомендуется).
 
-- [Visual Studio Code](https://code.visualstudio.com/) (рекомендуется)
+### Клонирование репозитория
 
-1. Клонировать репозиторий на своё устройство
+Если не настроен SSH, то:
 
 ```bash
 git clone https://github.com/yegorgunko/es-doc.git
 ```
 
-2. Установить зависимости
+или:
 
 ```bash
-yarn
+git clone git@github.com:yegorgunko/es-doc.git
 ```
 
-3. Запустить проект в режиме разработки
+Также можно скачать последнюю версию по [ссылке](https://github.com/yegorgunko/es-doc/archive/refs/heads/master.zip).
+
+### Установка зависимостей
 
 ```bash
-yarn dev
+yarn # npm i
+```
+
+### Запуск проекта в режиме разработки
+
+```bash
+yarn dev # npm run dev
 ```
