@@ -134,7 +134,7 @@ module.exports = {
           title: 'Разное',
           path: '/misc/',
           collapsable: false,
-          children: ['news-sources.md'],
+          children: ['news-sources.md', 'artists.md'],
         },
       ],
     },
