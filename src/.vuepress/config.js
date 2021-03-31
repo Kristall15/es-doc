@@ -139,7 +139,7 @@ module.exports = {
           title: 'Разное',
           path: '/misc/',
           collapsable: false,
-          children: ['news-sources.md', 'artists.md'],
+          children: ['news-sources.md', 'artists.md', 'literature.md'],
         },
       ],
     },
