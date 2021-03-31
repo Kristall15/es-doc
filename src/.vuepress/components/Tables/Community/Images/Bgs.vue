@@ -51,6 +51,7 @@ export default {
         'ext_dining_hall_near_rain',
         'ext_dining_hall_near_rain_sunset',
         'ext_house_of_sl_sunset',
+        'ext_house_of_un_sunset',
         'ext_library_after_rain',
         'ext_library_fog',
         'ext_library_night_lights',
