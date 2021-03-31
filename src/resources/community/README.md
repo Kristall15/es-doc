@@ -3,4 +3,5 @@
 - Изображения
   - [Фоны](./images/bgs.md)
   - [CG](./images/cgs.md)
-  - [Звуки](./sounds/music.md)
+- Звуки
+  - [Музыка](./sounds/music.md)
