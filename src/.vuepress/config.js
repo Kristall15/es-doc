@@ -126,6 +126,11 @@ module.exports = {
               collapsable: false,
               children: ['community/images/bgs.md', 'community/images/cgs.md'],
             },
+            {
+              title: 'Звуки',
+              collapsable: false,
+              children: ['community/sounds/music.md'],
+            },
           ],
         },
       ],
