@@ -27,4 +27,5 @@
 
 ![Загрузка изменений](.github/contributing/commit_changes.png)
 
+
 ## 3. Предложение изменений
