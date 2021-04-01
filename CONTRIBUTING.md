@@ -26,6 +26,7 @@
 Пример принимания изменений приведён ниже.
 
 ![Загрузка изменений](.github/contributing/commit_changes.png)
+
 ![Pushим изменения в удалённый репозиторий](.github/contributing/push_changes.png)
 
 
