@@ -10,3 +10,4 @@
 - [Орика](https://vk.com/orika_art) | [Patreon](https://www.patreon.com/orika_art) | [Twitter](https://twitter.com/Orika_art) | [Boosty](https://boosty.to/orika)
 - [Бесконечное Лето: Лаборатория фотошопа](https://vk.com/public184889068)
 - [INGA AGNI ART](https://vk.com/ingaagniart) | [Instagram](https://www.instagram.com/inga_agni.art/) | [DeviantArt](https://www.deviantart.com/ingaagni) | [Virink](https://virink.com/ingaagni)
+- [D.INS 16+](https://vk.com/d__ins) | [Instagram](https://www.instagram.com/d.instouch/)
