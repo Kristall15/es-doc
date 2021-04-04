@@ -14,5 +14,5 @@
 
 ## Программирование
 
-- Майкл Доусон — "Программируем на Python" | <a href="/src/.vuepress/public/misc/literature/code/dawson.pdf" download>Скачать</a>
+- Майкл Доусон — "Программируем на Python" | <a href="/src/.vuepress/public/misc/literature/programming/dawson.pdf" download>Скачать</a>
 - [Эрик Мэтиз — "Изучаем Python. Программирование игр, визуализация данных, веб-приложения"](https://www.ozon.ru/product/izuchaem-python-programmirovanie-igr-vizualizatsiya-dannyh-veb-prilozheniya-138132785/)
