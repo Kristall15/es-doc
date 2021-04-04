@@ -16,7 +16,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['link', { rel: 'icon', href: '/images/icons/favicon.png' }],
+    ['link', { rel: 'icon', href: '/images/icons/favicon.webp' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'theme-color', content: '#CD0000' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
@@ -144,7 +144,7 @@ module.exports = {
       ],
     },
     sidebarDepth: 2,
-    logo: '/images/icons/logo.png',
+    logo: '/images/icons/logo.webp',
   },
 
   markdown: {
