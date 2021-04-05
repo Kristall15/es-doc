@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /images/icons/logo.png
+heroImage: /images/icons/logo.webp
 actionText: Начать →
 actionLink: /guide/
 features:
