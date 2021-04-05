@@ -57,6 +57,30 @@ export default {
           name: 'we_meet_in_dreams',
           description: 'Gothic Storm — We Meet In Dreams',
         },
+        { name: 'december', description: 'Kai Engel - December' },
+        { name: 'machinery', description: 'Kai Engel - Machinery' },
+        {
+          name: 'melancholic_bliss',
+          description: 'Brand X Music - Melancholic Bliss',
+        },
+        {
+          name: 'simple_thoughts',
+          description: 'Brand X Music - Simple Thoughts',
+        },
+        {
+          name: 'watching_clouds',
+          description: 'Brand X Music - Watching Clouds',
+        },
+        { name: 'feelings', description: 'Dark Life Note - Feelings' },
+        { name: 'hear_me_now', description: 'Dark Life Note - Hear Me Now' },
+        {
+          name: 'walking_at_night_alone',
+          description: 'Dark Life Note - Walking At Night, Alone',
+        },
+        { name: 'glare', description: 'Kai Engel - Glare' },
+        { name: 'chasm', description: 'Tony Anderson - Chasm' },
+        { name: 'deep_waters', description: 'Tony Anderson - Deep Waters' },
+        { name: 'immersion', description: 'Tony Anderson - Immersion' },
       ],
     }
   },
