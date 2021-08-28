@@ -23,6 +23,9 @@ export default {
   data() {
     return {
       bgs: [
+        'ext_admins_day',
+        'ext_admins_night',
+        'ext_admins_rain',
         'ext_aidpost_sunset',
         'ext_bathhouse_day',
         'ext_bathhouse_sunset',
@@ -51,6 +54,7 @@ export default {
         'ext_dining_hall_near_rain',
         'ext_dining_hall_near_rain_sunset',
         'ext_house_of_sl_sunset',
+        'ext_house_of_un_sunset',
         'ext_library_after_rain',
         'ext_library_fog',
         'ext_library_night_lights',
@@ -84,6 +88,8 @@ export default {
         'int_bathhouse',
         'int_bathhouse2',
         'int_bathhouse_steam',
+        'int_chief_office_day',
+        'int_chief_office_rain',
         'int_dining_hall_people_sunset',
         'int_dining_hall_rain',
         'int_dining_hall_rain_night',
